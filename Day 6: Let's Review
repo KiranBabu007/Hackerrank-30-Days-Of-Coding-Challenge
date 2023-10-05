@@ -1,0 +1,13 @@
+n=int(input())
+
+for i in range(n):
+    estring=""
+    ostring=""
+    s=input()
+    for j in range(0,len(s)):
+        if j % 2 == 0:
+            estring += s[j]
+        else:
+            ostring += s[j]
+    print(estring+" "+ostring)
+    
