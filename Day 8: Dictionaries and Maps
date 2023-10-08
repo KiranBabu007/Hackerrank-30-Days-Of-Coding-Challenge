@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n=int(input())
+cont={}
+for _ in range(n):
+    key,value=input().split(" ")
+    cont[key]=value
+for i in range(n):
+    name=input()
+    if name in cont:
+         print(f"{name}={cont[name]}")
+    else:
+         print("Not found")
